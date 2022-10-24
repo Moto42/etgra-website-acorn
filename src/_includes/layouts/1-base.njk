@@ -9,6 +9,7 @@
     <script src="/js/alpine.js?v={% version %}"></script>
 </head>
 <body>
+    {% include "partials/header.njk" %}
     {{ content | safe }}
 </body>
 </html>

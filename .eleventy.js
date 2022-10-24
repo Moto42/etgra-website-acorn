@@ -24,6 +24,8 @@ module.exports = function(eleventyConfig) {
    */
   eleventyConfig.addPassthroughCopy({
     './node_modules/alpinejs/dist/cdn.js': './js/alpine.js',
+    './images': './images'
+
   });
 
   // Add Shortcodes

@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/Moto42/etgra-website-acorn/issues"
   },
-  "homepage": "https://github.com/Moto42/etgra-website-acorn#readme"
+  "homepage": "https://github.com/Moto42/etgra-website-acorn#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^1.0.2"
+  }
 }

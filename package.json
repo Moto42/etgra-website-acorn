@@ -7,7 +7,8 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npx eleventy",
+    "dev": "npx eleventy --serve"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,13 @@
   },
   "homepage": "https://github.com/Moto42/etgra-website-acorn#readme",
   "dependencies": {
-    "@11ty/eleventy": "^1.0.2"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.2",
+    "alpinejs": "^3.10.2",
+    "autoprefixer": "^10.4.7",
+    "postcss-cli": "^9.1.0",
+    "postcss-import": "^14.1.0",
+    "tailwindcss": "^3.1.4"
   }
 }

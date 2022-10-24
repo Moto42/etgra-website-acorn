@@ -1,6 +1,4 @@
 ---
-title: "Hello World"
-layout: 'layouts/1-base.njk'
 ---
 
 # Home

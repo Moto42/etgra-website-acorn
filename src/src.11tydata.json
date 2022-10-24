@@ -1,0 +1,8 @@
+{
+    "title": "East Texas Goat Raisers Association",
+    "authorName": "Wesley Williams",
+    "authorUrl": "https://WesleyWilliams.dev",
+    "favicon": "/images/favicon.svg?v={% version %}",
+    "url": "https://etgra.org",
+    "layout": "/layouts/1-base.njk"
+}

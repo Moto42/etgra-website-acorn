@@ -1,0 +1,28 @@
+{
+  "name": "etgra-website-acorn",
+  "version": "1.0.0",
+  "description": "Website of the East Texas Goat Raisers Association",
+  "main": "update-me.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Moto42/etgra-website-acorn.git"
+  },
+  "keywords": [
+    "website",
+    "eleventy",
+    "goats",
+    "GOATS!"
+  ],
+  "author": "Wesley Williams",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Moto42/etgra-website-acorn/issues"
+  },
+  "homepage": "https://github.com/Moto42/etgra-website-acorn#readme"
+}

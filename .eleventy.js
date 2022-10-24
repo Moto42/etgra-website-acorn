@@ -18,6 +18,13 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addWatchTarget("./src/styles/")
   eleventyConfig.addWatchTarget("./tailwind.config.js")
 
+  // Ingore these files
+  const ignoreTheseFiles = [
+  ];
+  for(let file in ignoreTheseFiles) {
+    eleventyConfig.ignore.add(file);
+  }
+
   /** Copy these files/folders from `location A` to `location B`
    * Notice that the entries are key-value parse in an options object
    * { LocationA : Location B }

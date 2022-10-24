@@ -3,5 +3,4 @@
 ---
 
 # Newsletter
-
 <!-- TODO: list the newsletters here -->

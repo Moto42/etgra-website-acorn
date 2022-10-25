@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   content: ["./src/**/*.{html,js,md,njk}"],
   theme: {
@@ -19,6 +22,11 @@ module.exports = {
       'fontFamily': {
         'noto-sans': [`"Noto Sans"`, "sans-serif"]
       }
+    },
+    fontFamily: {
+      'sans': [`"Noto Sans"`, ...defaultTheme.fontFamily.sans],
+      'serif': [...defaultTheme.fontFamily.serif],
+      'mono': [...defaultTheme.fontFamily.mono]
     },
   },
   plugins: [],

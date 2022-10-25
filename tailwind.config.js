@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   content: ["./src/**/*.{html,js,md,njk}"],
   theme: {
@@ -12,9 +15,19 @@ module.exports = {
           },
           'logo': {
             'bg': '#52525b'
-          }
+          },
+          'link': '#0891b2',
         }
+      },
+      'fontFamily': {
+        'noto-sans': [`"Noto Sans"`, "sans-serif"],
+        'playfair-display': [`"Playfair Display"`]
       }
+    },
+    fontFamily: {
+      'sans': [`"Noto Sans"`, ...defaultTheme.fontFamily.sans],
+      'serif': [`"Playfair Display"`, ...defaultTheme.fontFamily.serif],
+      'mono': [...defaultTheme.fontFamily.mono]
     },
   },
   plugins: [],

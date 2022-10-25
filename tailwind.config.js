@@ -13,7 +13,7 @@ module.exports = {
           'logo': {
             'bg': '#52525b'
           },
-          'link': '#06b6d4',
+          'link': '#0891b2',
         }
       }
     },

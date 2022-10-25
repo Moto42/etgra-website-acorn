@@ -20,12 +20,13 @@ module.exports = {
         }
       },
       'fontFamily': {
-        'noto-sans': [`"Noto Sans"`, "sans-serif"]
+        'noto-sans': [`"Noto Sans"`, "sans-serif"],
+        'playfair-display': [`"Playfair Display"`]
       }
     },
     fontFamily: {
       'sans': [`"Noto Sans"`, ...defaultTheme.fontFamily.sans],
-      'serif': [...defaultTheme.fontFamily.serif],
+      'serif': [`"Playfair Display"`, ...defaultTheme.fontFamily.serif],
       'mono': [...defaultTheme.fontFamily.mono]
     },
   },

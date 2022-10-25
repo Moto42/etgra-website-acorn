@@ -4,19 +4,22 @@
 
 @layer base {
     h1 {
-        @apply text-2xl font-bold;
+        @apply text-2xl font-serif font-bold;
     }
     h2 {
-        @apply text-xl font-bold;
+        @apply text-xl font-serif font-bold;
     }
     h3 {
-        @apply text-lg font-bold;
+        @apply text-lg font-serif font-bold;
     }
     h4 {
-        @apply font-bold;
+        @apply font-serif font-bold;
     }
     h5 {
-        @apply italic;
+        @apply font-serif italic;
+    }
+    h6 {
+        @apply font-serif 
     }
     p {
         @apply my-4;

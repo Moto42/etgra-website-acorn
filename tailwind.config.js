@@ -12,7 +12,8 @@ module.exports = {
           },
           'logo': {
             'bg': '#52525b'
-          }
+          },
+          'link': '#06b6d4',
         }
       }
     },

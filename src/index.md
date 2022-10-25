@@ -3,4 +3,10 @@
 
 # Home
 
-Welcome to East Texas Goat Raisers Association’s (ETGRA) web page. ETGRA was formed in 1996 by a dedicated group of Goat Ranchers and Farmers to promote the goat industry in East Texas. This dedication remains the priority of ETGRA’s Board and general membership. The association sponsors sales, shows, and workshops on a regular basis. Workshops cover all facets of raising goats such as marketing, feeding, medications, worming, genetics, preventative care, and general husbandry of goats. We invite all people in the goat industry to attend these events and hopefully join ETGRA. Whether you are a seasoned veteran or new to the practice of raising goats, ETGRA has a spot for you. There is a monthly meeting the first Tuesday of every month. Contact ETGRA or look under Events for meeting times, location, and method (most meetings are held via teleconference). There are quarterly meetings for the general membership. These are held at our property, located at 32186 U S Hwy 69 N, Jacksonville, TX 75766.
+The ETGRA is a non-profit organization composed of goat enthusiasts with a desire to promote the goat industry in East Texas. The organization was established in 1996 by a group of farmers and ranchers who were interested in raising and marketing goats. 
+
+The group sponsors events such as sales, shows, and presentations of interest to goat raisers. The organization is headed by a Board of Directors elected by the general membership. Quarterly membership meetings are held within the East Texas area.
+
+Although the ETGRA primarily represents the East Texas area, we invite everyone with an interest in goats to join. 
+
+You can visit our Facebook group at <https://www.facebook.com/groups/ETGRA>

@@ -9,6 +9,9 @@ module.exports = {
             'DEFAULT': '#0e7490',
             'start': '#22d3ee',
             'end': '#0e7490',
+          },
+          'logo': {
+            'bg': '#52525b'
           }
         }
       }

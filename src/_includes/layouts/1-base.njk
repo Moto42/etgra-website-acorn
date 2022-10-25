@@ -10,6 +10,8 @@
 </head>
 <body>
     {% include "partials/header.njk" %}
-    {{ content | safe }}
+    <main class="p-4 my-8 border-4 border-cyan-700">
+        {{ content | safe }}
+    </main>
 </body>
 </html>

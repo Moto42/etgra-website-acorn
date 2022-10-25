@@ -15,6 +15,9 @@ module.exports = {
           },
           'link': '#0891b2',
         }
+      },
+      'fontFamily': {
+        'noto-sans': [`"Noto Sans"`, "sans-serif"]
       }
     },
   },

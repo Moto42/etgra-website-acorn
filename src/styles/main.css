@@ -19,7 +19,7 @@
         @apply italic;
     }
     p {
-        @apply my-4;
+        @apply my-4 font-noto-sans;
     }
     a {
         @apply text-etgra-link;

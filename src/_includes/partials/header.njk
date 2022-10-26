@@ -18,7 +18,20 @@
                     border-dotted border-pink-500 border-4
                 "
             >
-                
+                {% set imageList = [
+                    '/images/headergoats/goat-hardhat-1.png',
+                    '/images/headergoats/goat-hardhat-2.png',
+                    '/images/headergoats/goat1.jpg',
+                    '/images/headergoats/goat2.jpg',
+                    '/images/headergoats/goat3.jpg'
+                ] %}
+                {% for imageUrl in imageList %}
+                    <img 
+                        class="h-full aspect-[3/2]"
+                        src="{{imageUrl}}" 
+                        alt=""
+                    >
+                {% endfor %}
                 
             </div>
         </div>

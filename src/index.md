@@ -11,6 +11,14 @@ Although the ETGRA primarily represents the East Texas area, we invite everyone 
 
 You can visit our Facebook group at <https://www.facebook.com/groups/ETGRA>
 
+## Join the ETGRA
+
+To join, please fill out and mail in our new member form.  
+[New Member Application](assets/Application-ETGRA-Mar-2016.pdf)
+
+
 ## Under Construction
 
 Please pardon our dust. ETGRA.org is being rebuilt from the ground up.
+
+Last updated: Tuesday October 25, 2022

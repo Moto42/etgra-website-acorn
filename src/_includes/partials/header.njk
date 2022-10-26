@@ -1,21 +1,23 @@
 <header class="border-solid border-y-8 border-etgra-border w-full">
     {#  #}
-    <div class="w-100 flex justify-center">{# Gallery and Logo #}
+    <div class="w-100 flex justify-center overflow-hidden">{# Gallery and Logo #}
         <div class="">&nbsp;</div>
         <div {# LogoContainer #}
             class="
                 flex flex-col items-start relative
                 border-solid border-x-8 border-etgra-border 
                 gap-4 p-4 max-w-[70%]
-                bg-white 
+                
             "
         >
             <img class="w-full" src="/images/logos/logo_general.png" alt="">
             <div class="text-center font-serif font-bold text-2xl ">East Texas Goat Raisers Association</div>
             <div {# header gallery #}
                 class="
-                    absolute top-0 bottom-0 left-0 aspect-[3/2]
+                    z-[-1] 
+                    absolute top-0 bottom-0 left-full aspect-[3/2]
                     border-dotted border-pink-500 border-4
+
                 "
             >
                 {% set imageList = [
@@ -27,9 +29,10 @@
                 ] %}
                 {% for imageUrl in imageList %}
                     <img 
-                        class="h-full aspect-[3/2]"
+                        class="top-0 bottom-0 aspect-[3/2] absolute"
                         src="{{imageUrl}}" 
                         alt=""
+                        style="--position:{{ loop.index0 -2 }}; transition: right 1s ease-in-out; right: calc(var(--position)*-100%);"
                     >
                 {% endfor %}
                 

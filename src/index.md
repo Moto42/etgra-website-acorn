@@ -10,3 +10,7 @@ The group sponsors events such as sales, shows, and presentations of interest to
 Although the ETGRA primarily represents the East Texas area, we invite everyone with an interest in goats to join. 
 
 You can visit our Facebook group at <https://www.facebook.com/groups/ETGRA>
+
+## Under Construction
+
+Please pardon our dust. ETGRA.org is being rebuilt from the ground up.

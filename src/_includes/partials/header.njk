@@ -26,7 +26,11 @@
                     absolute top-0 bottom-0 left-full aspect-[3/2]
                 "
                 style="--offset: 0"
-                x-data
+                x-data="{
+                    offset: 0,
+                    shift: function(){this.offset -= 1; console.log(this.offset)}
+                }"
+                
             >
                 {% for imageUrl in imageList %}
                     <img 

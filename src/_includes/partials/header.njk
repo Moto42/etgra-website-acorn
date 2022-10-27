@@ -48,7 +48,15 @@
                         class="top-0 bottom-0 aspect-[3/2] absolute"
                         src="{{imageUrl}}" 
                         alt=""
-                        style="--position:{{ loop.index0 -2 }}; transition: right 1s ease-in-out; right: calc((var(--position) + var(--offset)) * -100%);"
+                        style="--position:{{ loop.index0 - 3 }}; transition: right 1s ease-in-out; right: calc((var(--position) + var(--offset)) * -100%);"
+                    >
+                {% endfor %}
+                {% for imageUrl in imageList %}
+                    <img 
+                        class="top-0 bottom-0 aspect-[3/2] absolute"
+                        src="{{imageUrl}}" 
+                        alt=""
+                        style="--position:{{ loop.index0 - 3 + loop.length }}; transition: right 1s ease-in-out; right: calc((var(--position) + var(--offset)) * -100%);"
                     >
                 {% endfor %}
                 

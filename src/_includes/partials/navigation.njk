@@ -1,7 +1,22 @@
 {% macro navbutton(text='nav',linkto='/') %}
-    <a href="{{linkto}}" class="">{{text}}</a>
+    <a 
+        href="{{linkto}}" 
+        class="px-2"
+    >
+        {{text}}
+    </a>
 {% endmacro %}
 
-<nav class="">
+<nav 
+    class="
+        font-bold font-serif uppercase
+        flex divide-x-2 justify-center py-2 
+        border-solid border-b-8 border-etgra-border
+    "
+>
+    {{ navbutton('home','/') }}
+    {{ navbutton('home','/') }}
+    {{ navbutton('home','/') }}
+    {{ navbutton('home','/') }}
     {{ navbutton('home','/') }}
 </nav>

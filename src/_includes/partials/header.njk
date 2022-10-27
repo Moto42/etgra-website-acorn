@@ -9,9 +9,10 @@
     '/images/headergoats/goat3.jpg'
 ] %}
 {% set maxImgHeight = 'max-h-[4in]' %}
-<header class="border-solid border-y-8 border-etgra-border w-full">
+
+<header class=" w-full">
     {#  #}
-    <div class="w-100 flex justify-center overflow-hidden">{# Gallery and Logo #}
+    <div class="border-solid border-y-8 border-etgra-border w-100 flex justify-center overflow-hidden">{# Gallery and Logo #}
         <div class="">&nbsp;</div>
         <div {# LogoContainer #}
             class="
@@ -67,4 +68,5 @@
         </div>
 
     </div>
+    {% include "partials/navigation.njk" %}
 </header>

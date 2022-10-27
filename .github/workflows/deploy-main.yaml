@@ -5,7 +5,7 @@ on:
     branches:
       - action
 jobs:
-  Build the Files:
+  Build_the_Files:
     runs-on: ubuntu-latest
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."

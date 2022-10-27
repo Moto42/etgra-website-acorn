@@ -9,11 +9,13 @@
     @param
 #}
 {% macro navbutton(text='nav',linkto='/') %}
+    {% set isThisSection = linkto == page.filePathStem or linkto == section %}
     <a 
         href="{{linkto}}" 
         class="
             px-2 text-etgra-border sm:block
             sm:max-h-[1.5em] transition-[max-height] transition-duration-[1.5s] overflow-hidden
+            {{ 'underline' if isThisSection }}
         "
         x-bind:class="open ? 'max-h-[0em]' : 'max-h-[1.5em]'"
     >

@@ -16,9 +16,8 @@
                 class="
                     z-[-1] 
                     absolute top-0 bottom-0 left-full aspect-[3/2]
-                    border-dotted border-pink-500 border-4
-
                 "
+                style="--offset: 0"
             >
                 {% set imageList = [
                     '/images/headergoats/goat-hardhat-1.png',
@@ -32,7 +31,7 @@
                         class="top-0 bottom-0 aspect-[3/2] absolute"
                         src="{{imageUrl}}" 
                         alt=""
-                        style="--position:{{ loop.index0 -2 }}; transition: right 1s ease-in-out; right: calc(var(--position)*-100%);"
+                        style="--position:{{ loop.index0 -2 }}; transition: right 1s ease-in-out; right: calc((var(--position) + var(--offset)) * -100%);"
                     >
                 {% endfor %}
                 

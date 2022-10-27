@@ -26,7 +26,7 @@
             <div {# header gallery #}
                 class="
                     z-[-1] 
-                    absolute top-0 bottom-0 left-full aspect-[3/2]
+                    absolute top-0 bottom-0 left-full aspect-[2.8/2]
                 "
                 style="--offset: 0"
                 x-data="{
@@ -48,7 +48,7 @@
             >
                 {% for imageUrl in imageList %}
                     <img 
-                        class="top-0 bottom-0 aspect-[3/2] absolute {{maxImgHeight}} h-full object-cover"
+                        class="top-0 bottom-0 aspect-[2.8/2] absolute {{maxImgHeight}} h-full object-cover"
                         src="{{imageUrl}}" 
                         alt=""
                         style="--position:{{ loop.index0 - 3 }}; transition: right 1s ease-in-out; right: calc((var(--position) + var(--offset)) * -100%);"
@@ -56,7 +56,7 @@
                 {% endfor %}
                 {% for imageUrl in imageList %}
                     <img 
-                        class="top-0 bottom-0 aspect-[3/2] absolute {{maxImgHeight}} h-full object-cover"
+                        class="top-0 bottom-0 aspect-[2.8/2] absolute {{maxImgHeight}} h-full object-cover"
                         src="{{imageUrl}}" 
                         alt=""
                         style="--position:{{ loop.index0 - 3 + loop.length }}; transition: right 1s ease-in-out; right: calc((var(--position) + var(--offset)) * -100%);"

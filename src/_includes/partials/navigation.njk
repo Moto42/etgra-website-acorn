@@ -1,3 +1,13 @@
+{#  The navigation menu,  
+    Will probably go in the header.
+
+    For help adding new items to the menu, skip to `#linkList` below
+ #}
+
+{#  macro for the links or buttons themselves  
+    @param text: string text to display
+    @param
+#}
 {% macro navbutton(text='nav',linkto='/') %}
     <a 
         href="{{linkto}}" 
@@ -11,6 +21,7 @@
     </a>
 {% endmacro %}
 
+{# The nav-bar element #}
 <nav 
     class="
         font-bold font-serif uppercase
@@ -19,15 +30,33 @@
         border-solid border-b-8 border-etgra-border
         overflow-hidden 
     "
+    {# is the mobile menu open or shut? defaults shut #}
     x-data="{open: false}"
 >
     <div 
+        {# mobile menu button, only visible on mobile screens #}
         class="text-etgra-border font-bold text-lg block sm:hidden cursor-pointer grow-0"
         x-on:click="open = !open"
     >
         ☰
     </div>
+    {#  #linkList
+        Each item in the list below is a link in the nav bar.
+        
+        To change the order the buttons appear in, simpley change their order 
+        here.
+
+        To add a new link, simply add another call to the navbutton() macro  
+        like this `{{ navbutton('Button-text-here', '/url/of/page') }}`
+
+        Note the `/` at the start of the url above. This tells the browser that 
+        this url is for the site we are on now.  
+        ie: "/someurl" becomes `https://this.site/someurl`, but `someurl` will
+        be interpreted as `someurl` and won't work.
+
+     #}
     {{ navbutton('home','/') }}
-    {{ navbutton('contact','/contact') }}
     {{ navbutton('sales','/sales') }}
+    {{ navbutton('contact','/contact') }}
 </nav>
+

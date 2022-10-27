@@ -10,6 +10,9 @@
 #}
 {% macro navbutton(text='nav',linkto='/') %}
     {% set isThisSection = linkto == page.filePathStem or linkto == section %}
+    {% if linkto == '/' and page.filePathStem == '/index' %}
+        {% set isThisSection = true %}
+    {% endif %}
     <a 
         href="{{linkto}}" 
         class="

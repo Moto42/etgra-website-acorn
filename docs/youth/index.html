@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>East Texas Goat Raisers Association Youth</title>
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="\styles\main.css?v=1666843834584">
+    <script src="/js/alpine.js?v=1666843834584" defer></script>
+</head>
+<body class="flex flex-col items-center bg-zinc-100">
+    <div class="w-full flex flex-col items-center bg-zinc-50 drop-shadow-md">
+        
+
+
+<header class="border-solid border-y-8 border-etgra-border w-full">
+    
+    <div class="w-100 flex justify-center overflow-hidden">
+        <div class="">&nbsp;</div>
+        <div 
+            class="
+                flex flex-col items-start relative
+                border-solid border-x-8 border-etgra-border 
+                gap-4 p-4 max-w-[70%]
+                bg-white bg-opacity-50
+            "
+        >
+            <img class="w-full max-h-[3in]" src="/images/logos/logo_general_trans.png" alt="">
+            <div class="w-full text-center font-serif font-bold text-2xl ">East Texas Goat Raisers Association</div>
+            <div 
+                class="
+                    z-[-1] 
+                    absolute top-0 bottom-0 left-full aspect-[3/2]
+                "
+                style="--offset: 0"
+                x-data="{
+                    timer: 6000,
+                    offset: 0,
+                    shift: function(){
+                        $data.offset -= 1; 
+                        $el.style.setProperty('--offset', $data.offset);
+                        const firstChild = $el.firstElementChild;
+                        const newPosition = Number($el.lastElementChild.style.getPropertyValue('--position')) + 1;
+                        $el.appendChild(firstChild);
+                        firstChild.style.setProperty('transition', 'right 0s');
+                        firstChild.style.setProperty('--position', newPosition);
+                        firstChild.style.setProperty('transition', 'right 1s ease-in-out');
+                        setTimeout($data.shift, $data.timer);
+                    },
+                }"
+                x-init="//setTimeout(shift, timer);"
+            >
+                
+                    <img 
+                        class="top-0 bottom-0 aspect-[3/2] absolute max-h-[4in] h-full object-cover"
+                        src="/images/headergoats/goat1.jpg" 
+                        alt=""
+                        style="--position:-3; transition: right 1s ease-in-out; right: calc((var(--position) + var(--offset)) * -100%);"
+                    >
+                
+                    <img 
+                        class="top-0 bottom-0 aspect-[3/2] absolute max-h-[4in] h-full object-cover"
+                        src="/images/headergoats/goat-hardhat-2.png" 
+                        alt=""
+                        style="--position:-2; transition: right 1s ease-in-out; right: calc((var(--position) + var(--offset)) * -100%);"
+                    >
+                
+                    <img 
+                        class="top-0 bottom-0 aspect-[3/2] absolute max-h-[4in] h-full object-cover"
+                        src="/images/headergoats/goat2.jpg" 
+                        alt=""
+                        style="--position:-1; transition: right 1s ease-in-out; right: calc((var(--position) + var(--offset)) * -100%);"
+                    >
+                
+                    <img 
+                        class="top-0 bottom-0 aspect-[3/2] absolute max-h-[4in] h-full object-cover"
+                        src="/images/headergoats/goat-hardhat-1.png" 
+                        alt=""
+                        style="--position:0; transition: right 1s ease-in-out; right: calc((var(--position) + var(--offset)) * -100%);"
+                    >
+                
+                    <img 
+                        class="top-0 bottom-0 aspect-[3/2] absolute max-h-[4in] h-full object-cover"
+                        src="/images/headergoats/goat3.jpg" 
+                        alt=""
+                        style="--position:1; transition: right 1s ease-in-out; right: calc((var(--position) + var(--offset)) * -100%);"
+                    >
+                
+                
+                    <img 
+                        class="top-0 bottom-0 aspect-[3/2] absolute max-h-[4in] h-full object-cover"
+                        src="/images/headergoats/goat1.jpg" 
+                        alt=""
+                        style="--position:2; transition: right 1s ease-in-out; right: calc((var(--position) + var(--offset)) * -100%);"
+                    >
+                
+                    <img 
+                        class="top-0 bottom-0 aspect-[3/2] absolute max-h-[4in] h-full object-cover"
+                        src="/images/headergoats/goat-hardhat-2.png" 
+                        alt=""
+                        style="--position:3; transition: right 1s ease-in-out; right: calc((var(--position) + var(--offset)) * -100%);"
+                    >
+                
+                    <img 
+                        class="top-0 bottom-0 aspect-[3/2] absolute max-h-[4in] h-full object-cover"
+                        src="/images/headergoats/goat2.jpg" 
+                        alt=""
+                        style="--position:4; transition: right 1s ease-in-out; right: calc((var(--position) + var(--offset)) * -100%);"
+                    >
+                
+                    <img 
+                        class="top-0 bottom-0 aspect-[3/2] absolute max-h-[4in] h-full object-cover"
+                        src="/images/headergoats/goat-hardhat-1.png" 
+                        alt=""
+                        style="--position:5; transition: right 1s ease-in-out; right: calc((var(--position) + var(--offset)) * -100%);"
+                    >
+                
+                    <img 
+                        class="top-0 bottom-0 aspect-[3/2] absolute max-h-[4in] h-full object-cover"
+                        src="/images/headergoats/goat3.jpg" 
+                        alt=""
+                        style="--position:6; transition: right 1s ease-in-out; right: calc((var(--position) + var(--offset)) * -100%);"
+                    >
+                
+                
+            </div>
+        </div>
+
+    </div>
+</header>
+        <main class="max-w-[8in] p-4 my-8 border-4 border-cyan-700">
+            <h1>Youth</h1>
+<h2>East Texas Goat Raisers Association Youth</h2>
+<pre><code>      The East Texas Goat Raisers Association Youth established in 2012, has been organized to reward and support Young Goat Exhibitors and/or Producers that are competitively involved in exhibiting, raising, or learning about goats. Junior Members will be provided opportunities to raise, show and experience the goat industry first hand while drawing from the knowledge of the ETGRA members.
+</code></pre>
+<p>ETGRAY hosts at least one youth show a year. And at least one goat clinic a year.</p>
+<p>The youth have the opportunity to earn points for showing goats, working ETGRA functions and going to goat clinics. At the end of the year the points will be tallied, the first place youth of each age group will receive a buckle. Second and third place youth will also receive prizes.</p>
+<p>It is also not well known that ETGRA has a scholarship for seniors in High School. The youth does not have to be a member to receive the scholarship, but a parent, grandparent or legal guardian must be a member. The parent, grandparent or legal guardian must be a member for a minimum of a year  before the youth can apply for the scholarship. But an active youth member will be given higher consideration for the scholarship than non member youth or non participating youth.</p>
+<p>It’s only $10 for a youth to join. But in return you get the opportunity to draw knowledge from the ETGRA members.</p>
+<p>Find info on youth events (shows, etc.) under main menu for calendar of events, shows, etc.</p>
+<p><a href="/assets/Scholarship.pdf">ETGRA Scholarship </a></p>
+
+        </main>
+    </div>
+</body>
+</html>

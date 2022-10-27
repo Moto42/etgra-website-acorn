@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>East Texas Goat Raisers Association</title>
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="\styles\main.css?v=1666843834584">
+    <script src="/js/alpine.js?v=1666843834584" defer></script>
+</head>
+<body class="flex flex-col items-center bg-zinc-100">
+    <div class="w-full flex flex-col items-center bg-zinc-50 drop-shadow-md">
+        
+
+
+<header class="border-solid border-y-8 border-etgra-border w-full">
+    
+    <div class="w-100 flex justify-center overflow-hidden">
+        <div class="">&nbsp;</div>
+        <div 
+            class="
+                flex flex-col items-start relative
+                border-solid border-x-8 border-etgra-border 
+                gap-4 p-4 max-w-[70%]
+                bg-white bg-opacity-50
+            "
+        >
+            <img class="w-full max-h-[3in]" src="/images/logos/logo_general_trans.png" alt="">
+            <div class="w-full text-center font-serif font-bold text-2xl ">East Texas Goat Raisers Association</div>
+            <div 
+                class="
+                    z-[-1] 
+                    absolute top-0 bottom-0 left-full aspect-[3/2]
+                "
+                style="--offset: 0"
+                x-data="{
+                    timer: 6000,
+                    offset: 0,
+                    shift: function(){
+                        $data.offset -= 1; 
+                        $el.style.setProperty('--offset', $data.offset);
+                        const firstChild = $el.firstElementChild;
+                        const newPosition = Number($el.lastElementChild.style.getPropertyValue('--position')) + 1;
+                        $el.appendChild(firstChild);
+                        firstChild.style.setProperty('transition', 'right 0s');
+                        firstChild.style.setProperty('--position', newPosition);
+                        firstChild.style.setProperty('transition', 'right 1s ease-in-out');
+                        setTimeout($data.shift, $data.timer);
+                    },
+                }"
+                x-init="//setTimeout(shift, timer);"
+            >
+                
+                    <img 
+                        class="top-0 bottom-0 aspect-[3/2] absolute max-h-[4in] h-full object-cover"
+                        src="/images/headergoats/goat1.jpg" 
+                        alt=""
+                        style="--position:-3; transition: right 1s ease-in-out; right: calc((var(--position) + var(--offset)) * -100%);"
+                    >
+                
+                    <img 
+                        class="top-0 bottom-0 aspect-[3/2] absolute max-h-[4in] h-full object-cover"
+                        src="/images/headergoats/goat-hardhat-2.png" 
+                        alt=""
+                        style="--position:-2; transition: right 1s ease-in-out; right: calc((var(--position) + var(--offset)) * -100%);"
+                    >
+                
+                    <img 
+                        class="top-0 bottom-0 aspect-[3/2] absolute max-h-[4in] h-full object-cover"
+                        src="/images/headergoats/goat2.jpg" 
+                        alt=""
+                        style="--position:-1; transition: right 1s ease-in-out; right: calc((var(--position) + var(--offset)) * -100%);"
+                    >
+                
+                    <img 
+                        class="top-0 bottom-0 aspect-[3/2] absolute max-h-[4in] h-full object-cover"
+                        src="/images/headergoats/goat-hardhat-1.png" 
+                        alt=""
+                        style="--position:0; transition: right 1s ease-in-out; right: calc((var(--position) + var(--offset)) * -100%);"
+                    >
+                
+                    <img 
+                        class="top-0 bottom-0 aspect-[3/2] absolute max-h-[4in] h-full object-cover"
+                        src="/images/headergoats/goat3.jpg" 
+                        alt=""
+                        style="--position:1; transition: right 1s ease-in-out; right: calc((var(--position) + var(--offset)) * -100%);"
+                    >
+                
+                
+                    <img 
+                        class="top-0 bottom-0 aspect-[3/2] absolute max-h-[4in] h-full object-cover"
+                        src="/images/headergoats/goat1.jpg" 
+                        alt=""
+                        style="--position:2; transition: right 1s ease-in-out; right: calc((var(--position) + var(--offset)) * -100%);"
+                    >
+                
+                    <img 
+                        class="top-0 bottom-0 aspect-[3/2] absolute max-h-[4in] h-full object-cover"
+                        src="/images/headergoats/goat-hardhat-2.png" 
+                        alt=""
+                        style="--position:3; transition: right 1s ease-in-out; right: calc((var(--position) + var(--offset)) * -100%);"
+                    >
+                
+                    <img 
+                        class="top-0 bottom-0 aspect-[3/2] absolute max-h-[4in] h-full object-cover"
+                        src="/images/headergoats/goat2.jpg" 
+                        alt=""
+                        style="--position:4; transition: right 1s ease-in-out; right: calc((var(--position) + var(--offset)) * -100%);"
+                    >
+                
+                    <img 
+                        class="top-0 bottom-0 aspect-[3/2] absolute max-h-[4in] h-full object-cover"
+                        src="/images/headergoats/goat-hardhat-1.png" 
+                        alt=""
+                        style="--position:5; transition: right 1s ease-in-out; right: calc((var(--position) + var(--offset)) * -100%);"
+                    >
+                
+                    <img 
+                        class="top-0 bottom-0 aspect-[3/2] absolute max-h-[4in] h-full object-cover"
+                        src="/images/headergoats/goat3.jpg" 
+                        alt=""
+                        style="--position:6; transition: right 1s ease-in-out; right: calc((var(--position) + var(--offset)) * -100%);"
+                    >
+                
+                
+            </div>
+        </div>
+
+    </div>
+</header>
+        <main class="max-w-[8in] p-4 my-8 border-4 border-cyan-700">
+            <h1>Home</h1>
+<p>The ETGRA is a non-profit organization composed of goat enthusiasts with a desire to promote the goat industry in East Texas. The organization was established in 1996 by a group of farmers and ranchers who were interested in raising and marketing goats.</p>
+<p>The group sponsors events such as sales, shows, and presentations of interest to goat raisers. The organization is headed by a Board of Directors elected by the general membership. Quarterly membership meetings are held within the East Texas area.</p>
+<p>Although the ETGRA primarily represents the East Texas area, we invite everyone with an interest in goats to join.</p>
+<p>You can visit our Facebook group at <a href="https://www.facebook.com/groups/ETGRA">https://www.facebook.com/groups/ETGRA</a></p>
+<h2>Join the ETGRA</h2>
+<p>To join, please fill out and mail in our new member form.<br>
+<a href="assets/Application-ETGRA-Mar-2016.pdf">New Member Application</a></p>
+<h2>Under Construction</h2>
+<p>Please pardon our dust. ETGRA.org is being rebuilt from the ground up.</p>
+<p>Last updated: Tuesday October 25, 2022</p>
+
+        </main>
+    </div>
+</body>
+</html>

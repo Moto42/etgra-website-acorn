@@ -1,3 +1,7 @@
+{% macro navbutton(text='nav',linkto='/') %}
+    <a href="{{linkto}}" class="">{{text}}</a>
+{% endmacro %}
+
 <nav class="">
-    <div class="">navi</div>
+    {{ navbutton('home','/') }}
 </nav>

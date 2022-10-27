@@ -1,11 +1,12 @@
 {# relative paths to the images you want to have rotating in the header. #}
 {% set imageList = [
-    '/images/headergoats/goat-hardhat-1.png',
-    '/images/headergoats/goat-hardhat-2.png',
     '/images/headergoats/goat1.jpg',
+    '/images/headergoats/goat-hardhat-2.png',
     '/images/headergoats/goat2.jpg',
+    '/images/headergoats/goat-hardhat-1.png',
     '/images/headergoats/goat3.jpg'
 ] %}
+{% set maxImgHeight = 'max-h-[4in]' %}
 <header class="border-solid border-y-8 border-etgra-border w-full">
     {#  #}
     <div class="w-100 flex justify-center overflow-hidden">{# Gallery and Logo #}
@@ -18,8 +19,8 @@
                 bg-white bg-opacity-50
             "
         >
-            <img class="w-full" src="/images/logos/logo_general_trans.png" alt="">
-            <div class="text-center font-serif font-bold text-2xl ">East Texas Goat Raisers Association</div>
+            <img class="w-full max-h-[3in]" src="/images/logos/logo_general_trans.png" alt="">
+            <div class="w-full text-center font-serif font-bold text-2xl ">East Texas Goat Raisers Association</div>
             <div {# header gallery #}
                 class="
                     z-[-1] 
@@ -41,11 +42,11 @@
                         setTimeout($data.shift, $data.timer);
                     },
                 }"
-                x-init="setTimeout(shift, timer);"
+                x-init="//setTimeout(shift, timer);"
             >
                 {% for imageUrl in imageList %}
                     <img 
-                        class="top-0 bottom-0 aspect-[3/2] absolute"
+                        class="top-0 bottom-0 aspect-[3/2] absolute {{maxImgHeight}} h-full object-cover"
                         src="{{imageUrl}}" 
                         alt=""
                         style="--position:{{ loop.index0 - 3 }}; transition: right 1s ease-in-out; right: calc((var(--position) + var(--offset)) * -100%);"
@@ -53,7 +54,7 @@
                 {% endfor %}
                 {% for imageUrl in imageList %}
                     <img 
-                        class="top-0 bottom-0 aspect-[3/2] absolute"
+                        class="top-0 bottom-0 aspect-[3/2] absolute {{maxImgHeight}} h-full object-cover"
                         src="{{imageUrl}}" 
                         alt=""
                         style="--position:{{ loop.index0 - 3 + loop.length }}; transition: right 1s ease-in-out; right: calc((var(--position) + var(--offset)) * -100%);"

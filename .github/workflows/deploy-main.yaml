@@ -1,6 +1,9 @@
-name: GitHub Actions Demo
-run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
-on: [push]
+name: Build public pages
+run-name: ${{ github.actor }} has pushed to the deployment branch 🚀
+on: 
+  push:
+    branches:
+      - action
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest

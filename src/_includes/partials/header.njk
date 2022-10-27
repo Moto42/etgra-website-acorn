@@ -27,10 +27,21 @@
                 "
                 style="--offset: 0"
                 x-data="{
+                    timer: 6000,
                     offset: 0,
-                    shift: function(){this.offset -= 1; console.log(this.offset)}
+                    shift: function(){
+                        $data.offset -= 1; 
+                        $el.style.setProperty('--offset', $data.offset);
+                        const firstChild = $el.firstElementChild;
+                        const newPosition = Number($el.lastElementChild.style.getPropertyValue('--position')) + 1;
+                        $el.appendChild(firstChild);
+                        firstChild.style.setProperty('transition', 'right 0s');
+                        firstChild.style.setProperty('--position', newPosition);
+                        firstChild.style.setProperty('transition', 'right 1s ease-in-out');
+                        setTimeout($data.shift, $data.timer);
+                    },
                 }"
-                
+                x-init="setTimeout(shift, timer);"
             >
                 {% for imageUrl in imageList %}
                     <img 

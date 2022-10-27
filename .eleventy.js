@@ -7,7 +7,7 @@ const { execSync } = require("child_process");
 const now = String(Date.now());
 
 function runPostCSS() {
-  execSync("postcss \"src/styles/main.css\" --dir \"docs/styles\"");
+  execSync("postcss \"src/styles/main.css\" --dir \"_site/styles\"");
 }
 
 module.exports = function(eleventyConfig) {
@@ -44,7 +44,7 @@ module.exports = function(eleventyConfig) {
   return {
     dir: {
       input: "src",
-      output: "docs"
+      output: "_site"
     },
     templateFormats: ["html", "njk", "md"],
     markdownTemplateEngine: "njk",

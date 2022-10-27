@@ -17,5 +17,5 @@ jobs:
         run: |
           npm ci
           npm run build
-          ls ./docs
+          ls ./_site
       - run: echo "🍏 This job's status is ${{ job.status }}."

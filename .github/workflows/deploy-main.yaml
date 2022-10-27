@@ -17,5 +17,6 @@ jobs:
         run: |
           npm ci
           npm run build
-          ls ./_site
-      - run: echo "🍏 This job's status is ${{ job.status }}."
+      - name: upload pages artifact
+        uses: actions/upload-pages-artifact@v1
+      - run: echo "Build was ${{ job.status }}."

@@ -1,3 +1,11 @@
+{% set imageList = [
+    {# relative paths to the images you want to have rotating in the header. #}
+    '/images/headergoats/goat-hardhat-1.png',
+    '/images/headergoats/goat-hardhat-2.png',
+    '/images/headergoats/goat1.jpg',
+    '/images/headergoats/goat2.jpg',
+    '/images/headergoats/goat3.jpg'
+] %}
 <header class="border-solid border-y-8 border-etgra-border w-full">
     {#  #}
     <div class="w-100 flex justify-center overflow-hidden">{# Gallery and Logo #}
@@ -19,13 +27,6 @@
                 "
                 style="--offset: 0"
             >
-                {% set imageList = [
-                    '/images/headergoats/goat-hardhat-1.png',
-                    '/images/headergoats/goat-hardhat-2.png',
-                    '/images/headergoats/goat1.jpg',
-                    '/images/headergoats/goat2.jpg',
-                    '/images/headergoats/goat3.jpg'
-                ] %}
                 {% for imageUrl in imageList %}
                     <img 
                         class="top-0 bottom-0 aspect-[3/2] absolute"

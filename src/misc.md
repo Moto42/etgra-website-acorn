@@ -1,5 +1,6 @@
 ---
     Title: "Miscellaneous - East Texas Goat Raisers Association"
+    eleventyExcludeFromCollections: true
 ---
 
 # Miscellaneous

@@ -1,4 +1,5 @@
 ---
+    title: Shows - East Texas Goat Raisers Association.
 ---
 # ETGRA Shows
 

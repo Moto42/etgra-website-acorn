@@ -10,7 +10,7 @@ Tony Thomas
 - 713-594-1419
 - <pthomas0103@gmail.com>
 
-## Vice Presiden
+## Vice President
 
 Curtis Shoemaker
 - 936-867-2068

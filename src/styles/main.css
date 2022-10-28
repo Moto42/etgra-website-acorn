@@ -3,23 +3,23 @@
 @tailwind utilities;
 
 @layer base {
+    h1,h2,h3,h4,h5,h6 {
+        @apply font-serif mt-4 first:mt-0;
+    }
     h1 {
-        @apply text-2xl font-serif font-bold;
+        @apply text-2xl font-bold;
     }
     h2 {
-        @apply text-xl font-serif font-bold;
+        @apply text-xl font-bold;
     }
     h3 {
-        @apply text-lg font-serif font-bold;
+        @apply text-lg font-bold;
     }
     h4 {
-        @apply font-serif font-bold;
+        @apply font-bold;
     }
     h5 {
-        @apply font-serif italic;
-    }
-    h6 {
-        @apply font-serif 
+        @apply italic;
     }
     p {
         @apply my-4;

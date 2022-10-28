@@ -1,4 +1,6 @@
-
+---
+    title: "Sales - East Texas Goat Raisers Association"
+---
 # Sales
 
 ## ETGRA Sale September 24, 2016

@@ -1,5 +1,5 @@
 ---
-    title: "East Texas Goat Raisers Association Youth"
+    title: "Youth - East Texas Goat Raisers Association"
 ---
 
 

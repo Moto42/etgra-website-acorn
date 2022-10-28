@@ -19,3 +19,8 @@ Charles Johson-BOD  pc130168cj@gmail.com
 Donnie Driver-BOD no email
 Dempsey Walton-BOD (moving 11/2022-position will be open)
 Lea Owens-youth-281-851-7055 stoney7mm@yahoo.com
+
+# Bug
+Safari iPhone 6 S
+
+Logo and background are opaque.

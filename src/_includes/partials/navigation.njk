@@ -20,7 +20,7 @@
             sm:max-h-[1.5em] transition-[max-height] transition-duration-[1.5s] overflow-hidden
             {{ 'underline' if isThisSection }}
         "
-        x-bind:class="open ? 'max-h-[0em]' : 'max-h-[1.5em]'"
+        x-bind:class="open ? 'max-h-[1.5em]' :  'max-h-[0em]' "
     >
         {{text}}
     </a>
@@ -37,6 +37,7 @@
     "
     {# is the mobile menu open or shut? defaults shut #}
     x-data="{open: false}"
+    x-cloak
 >
     <div 
         {# mobile menu button, only visible on mobile screens #}
@@ -62,6 +63,7 @@
      #}
     {{ navbutton('home','/') }}
     {{ navbutton('sales','/sales') }}
+    {{ navbutton('leadership','/leadership') }}
     {{ navbutton('contact','/contact') }}
 </nav>
 

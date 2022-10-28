@@ -57,6 +57,7 @@ module.exports = function(eleventyConfig) {
   // Add Shortcodes
   // global 'version' used for cachebusting
   eleventyConfig.addShortcode('version', () => now);
+  eleventyConfig.addShortcode('lastRevisionTime', () => `${new Date().toLocaleTimeString('en-US',{timeStyle:'short'})} ${new Date().toLocaleDateString('en-US')}`);
 
   // Return your Object options:
   return {

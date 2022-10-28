@@ -21,4 +21,4 @@ To join, please fill out and mail in our new member form.
 
 Please pardon our dust. ETGRA.org is being rebuilt from the ground up.
 
-Last updated: Tuesday October 27, 2022
+Last updated: {% lastRevisionTime %}

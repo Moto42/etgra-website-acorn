@@ -1,5 +1,5 @@
 ---
-    title: "East Texas Goat Raisers Association Youth"
+    title: "Youth - East Texas Goat Raisers Association"
 ---
 
 
@@ -7,7 +7,7 @@
 
 ## East Texas Goat Raisers Association Youth
 
-          The East Texas Goat Raisers Association Youth established in 2012, has been organized to reward and support Young Goat Exhibitors and/or Producers that are competitively involved in exhibiting, raising, or learning about goats. Junior Members will be provided opportunities to raise, show and experience the goat industry first hand while drawing from the knowledge of the ETGRA members.
+The East Texas Goat Raisers Association Youth established in 2012, has been organized to reward and support Young Goat Exhibitors and/or Producers that are competitively involved in exhibiting, raising, or learning about goats. Junior Members will be provided opportunities to raise, show and experience the goat industry first hand while drawing from the knowledge of the ETGRA members.
 
 ETGRAY hosts at least one youth show a year. And at least one goat clinic a year.
 
@@ -17,6 +17,11 @@ It is also not well known that ETGRA has a scholarship for seniors in High Schoo
 
 It’s only $10 for a youth to join. But in return you get the opportunity to draw knowledge from the ETGRA members.
 
-Find info on youth events (shows, etc.) under main menu for calendar of events, shows, etc.
+<!-- Find info on youth events (shows, etc.) under main menu for calendar of events, shows, etc. -->
 
-[ETGRA Scholarship ](/assets/Scholarship.pdf)
+## Related Documents
+- [Youth Membership Guidlines](/assets/etgra_youth_membership_guidelines.docx)
+- [Youth Point System](/assets/etgra_youth_point_system.docx)
+- Scholarship
+    - [PDF](/assets/scholarship.pdf)
+    - [Word Document](/assets/Scholarship.pdf)

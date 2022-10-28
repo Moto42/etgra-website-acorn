@@ -14,7 +14,7 @@ You can visit our Facebook group at <https://www.facebook.com/groups/ETGRA>
 ## Join the ETGRA
 
 To join, please fill out and mail in our new member form.  
-[New Member Application](assets/Application-ETGRA-Mar-2016.pdf)
+[New Member Application](/assets/application_etgra_mar_2016.pdf)
 
 
 ## Under Construction

@@ -10,6 +10,21 @@ function runPostCSS() {
   execSync("postcss \"src/styles/main.css\" --dir \"_site/styles\"");
 }
 
+// Transforms are functions used to modify a templates output.
+function transform_no_change(content, outputPath) {
+  return content; // no change done.
+  // This is for an example
+}
+function transform_remove_prefixed_whitespace(content, outputPath) {
+  function getIndex(txt) {
+    for(let i in txt) {
+      if(!/[\s\n]/.test(txt[i])) return i;
+    }
+  }
+  const firstNonWhiteSpaceChar = getIndex(content);
+  return content.substring(firstNonWhiteSpaceChar);
+}
+
 module.exports = function(eleventyConfig) {
   // things to do before running eleventy
   eleventyConfig.on('eleventy.before', runPostCSS);
@@ -35,6 +50,9 @@ module.exports = function(eleventyConfig) {
     './assets': './assets',
 
   });
+
+  // Add Transforms, see https://www.11ty.dev/docs/config/#transforms
+  eleventyConfig.addTransform("remove-prefixed-whitespace", transform_remove_prefixed_whitespace);
 
   // Add Shortcodes
   // global 'version' used for cachebusting

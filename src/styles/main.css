@@ -27,4 +27,10 @@
     a {
         @apply text-etgra-link;
     }
+    ol,
+    ul,
+    menu {
+        list-style: revert;
+        padding: 0ch 2ch;
+    }
   }

@@ -1,11 +1,16 @@
 {% macro prop(name, content) %}
     <meta property="og:{{name}}" content="{{content}}"/>
 {% endmacro %}
+
 {% set httpImageUrl = urlHttp+'/images/logos/logo_general.png' %}
 {% set httpsImageUrl = url+'/images/logos/logo_general.png' %}
+{% set cannonicalUrl = url+page.url %}
 
 {{ prop('title',title) }}
-{{ prop('type', 'Organization') }}
+{{ prop('type', 'organization') }}
 {{ prop('image', httpImageUrl) }}
 {{ prop('image:secure_url', httpsImageUrl) }}
+{{ prop('image:alt', 'Logo of the ETGRA') }}
+{{ prop('url', cannonicalUrl) }}
 {{ prop('description',previewDescription) }}
+{{ prop('site_name', 'East Texas Goat Raisers Association') }}

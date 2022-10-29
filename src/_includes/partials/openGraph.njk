@@ -1,0 +1,8 @@
+{% macro prop(name, content) %}
+    <meta property="og:{{name}}" content="{{content}}"/>
+{% endmacro %}
+
+{{ prop('title',title) }}
+{{ prop('type', 'Organization') }}
+{{ prop('image', '/images/logos') }}
+{{ prop('description',previewDescription) }}

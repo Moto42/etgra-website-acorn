@@ -4,6 +4,7 @@
     "authorUrl": "https://WesleyWilliams.dev",
     "favicon": "/images/favicon.svg?v={% version %}",
     "url": "https://etgra.org",
+    "urlHttp": "http://etgra.org",
     "layout": "/layouts/1-base.njk",
     "previewDescription": "The ETGRA is a non-profit organization composed of goat enthusiasts with a desire to promote the goat industry in East Texas."
 }

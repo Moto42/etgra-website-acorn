@@ -1,8 +1,11 @@
 {% macro prop(name, content) %}
     <meta property="og:{{name}}" content="{{content}}"/>
 {% endmacro %}
+{% set httpImageUrl = urlHttp+'/images/logos/logo_general.png' %}
+{% set httpsImageUrl = url+'/images/logos/logo_general.png' %}
 
 {{ prop('title',title) }}
 {{ prop('type', 'Organization') }}
-{{ prop('image', '/images/logos') }}
+{{ prop('image', httpImageUrl) }}
+{{ prop('image:secure_url', httpsImageUrl) }}
 {{ prop('description',previewDescription) }}

@@ -1,0 +1,24 @@
+{% set httpImageUrl = urlHttp+'/images/logos/logo_general.png' %}
+{% set httpsImageUrl = url+'/images/logos/logo_general.png' %}
+{% set cannonicalUrl = url+page.url %}
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Organization",
+  "name":"East Texas Goat Raisers Association",
+  "description":"{{previewDescription}}",
+  "url":"{{cannonicalUrl}}",
+  "image":"{{httpsImageUrl}}",
+  "areaServed":"East Texas",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Buffalo",
+    "addressRegion": "TX",
+    "postalCode": "75831",
+    "streetAddress": "278 FM 489"
+  },
+  "keywords":"goat,goats,texas,east texas,livestock,livestock shows",
+  "knowsAbout": "goats"
+}
+</script>

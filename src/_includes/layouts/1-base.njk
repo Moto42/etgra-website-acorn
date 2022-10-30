@@ -20,7 +20,14 @@
 <body class="flex flex-col items-center bg-zinc-100">
     <div class="w-full flex flex-col items-center">
         {% include "partials/header.njk" %}
-        <div class="w-full pb-12 flex flex-col items-center" style="background-image: url('/images/backgrounds/goats-field.jpg')">
+        <div 
+            class="w-full pb-12 flex flex-col items-center" 
+            style="
+                background-image: url('/images/backgrounds/goats-field.jpg');
+                background-position: center bottom;
+                background-size: cover;
+            "
+        >
             <main class="w-full max-w-[8in] p-4 mt-8 bg-zinc-50 border-4 border-cyan-700 drop-shadow-lg">
                 {{ content | safe }}
             </main>

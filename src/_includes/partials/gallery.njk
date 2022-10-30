@@ -1,13 +1,19 @@
 {% macro galleryImage(image) %}
-    <figure>
-        <img src="{{imageUrl}}" alt=''>
-    </figure>
+
 {% endmacro %}
 
 {% macro gallery(images) %}
 <div class="w-full flex flex-wrap justify-center">
     {% for imageUrl in images %}
-        {{ galleryImage(imageUrl) }}
+        <figure class="w-[30%] min-w-[200px] max-w-full p-2">   
+            <div class="h-0 pt-[75%] relative">
+                <img 
+                    class="max-w-full max-h-full absolute top-0 left-0 h-full w-full object-cover"
+                    src="{{imageUrl}}"
+                    alt=''
+                >
+            </div>
+        </figure>
     {% endfor %}
 </div>
 {% endmacro %}

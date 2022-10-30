@@ -24,7 +24,7 @@ module.exports = {
         'playfair-display': [`"Playfair Display"`]
       },
       backgroundImage: {
-        'goats-in-field': 'url: "/images/background/goats_in_field.png"',
+        'goats-field': 'url: "/images/backgrounds/goats-field.jpg"',
       }
     },
     fontFamily: {

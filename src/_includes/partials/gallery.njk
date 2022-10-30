@@ -11,10 +11,10 @@
                     alt=''
                 >
             </div>
+            <div class="bg-slate-500 bg-opacity-50 z-50 fixed top-0 left-0 w-full h-full p-8" x-bind:class="open ? 'block' : 'hidden'" >
+                <img src="{{imageUrl}}" alt="" class="w-full h-full object-contain">
+            </div>
         </figure>
-        <div class="bg-slate-500 fixed top-0 left-0 w-full h-full">
-            <img src="{{imageUrl}}" alt="" class="">
-        </div>
     {% endfor %}
 </div>
 {% endmacro %}

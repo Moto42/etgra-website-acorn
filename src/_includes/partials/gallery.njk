@@ -1,11 +1,9 @@
-{% macro galleryImage(image) %}
 
-{% endmacro %}
 
 {% macro gallery(images) %}
 <div class="w-full flex flex-wrap justify-center">
     {% for imageUrl in images %}
-        <figure class="w-[30%] min-w-[200px] max-w-full p-2">   
+        <figure class="w-[30%] min-w-[200px] max-w-full p-2" x-data="{open: false}" x-on:click="open = !open;console.log(open);">
             <div class="h-0 pt-[75%] relative">
                 <img 
                     class="max-w-full max-h-full absolute top-0 left-0 h-full w-full object-cover"
@@ -14,6 +12,9 @@
                 >
             </div>
         </figure>
+        <div class="bg-slate-500 fixed top-0 left-0 w-full h-full">
+            <img src="{{imageUrl}}" alt="" class="">
+        </div>
     {% endfor %}
 </div>
 {% endmacro %}

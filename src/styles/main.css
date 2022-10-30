@@ -28,6 +28,7 @@
         text-shadow: 2px 2px 2px #000;
         @apply text-etgra-link;
     }
+    footer a,
     nav a {
         @apply text-etgra-border;
         text-shadow: none;

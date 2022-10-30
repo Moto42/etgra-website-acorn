@@ -22,6 +22,9 @@ module.exports = {
       'fontFamily': {
         'noto-sans': [`"Noto Sans"`, "sans-serif"],
         'playfair-display': [`"Playfair Display"`]
+      },
+      backgroundImage: {
+        'goats-in-field': 'url: "/images/background/goats_in_field.png"',
       }
     },
     fontFamily: {

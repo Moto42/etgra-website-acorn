@@ -26,6 +26,17 @@ function transform_remove_prefixed_whitespace(content, outputPath) {
 }
 
 module.exports = function(eleventyConfig) {
+
+  // Setting our markdown options
+  let markdownIt = require("markdown-it");
+  let options = {
+    html: true,
+    breaks: true,
+    linkify: true
+  };
+  let markdownLib = markdownIt(options).disable('code');
+  eleventyConfig.setLibrary("md", markdownLib);
+
   // things to do before running eleventy
   eleventyConfig.on('eleventy.before', runPostCSS);
 

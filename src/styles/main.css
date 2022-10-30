@@ -28,6 +28,10 @@
         text-shadow: 2px 2px 2px #000;
         @apply text-etgra-link;
     }
+    nav a {
+        @apply text-etgra-border;
+        text-shadow: none;
+    }
     ol,
     ul,
     menu {

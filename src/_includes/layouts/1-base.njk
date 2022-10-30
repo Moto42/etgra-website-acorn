@@ -20,9 +20,11 @@
 <body class="flex flex-col items-center bg-zinc-100">
     <div class="w-full flex flex-col items-center">
         {% include "partials/header.njk" %}
-        <main class="w-full max-w-[8in] p-4 mt-8 bg-zinc-50 border-4 border-cyan-700 drop-shadow-lg">
-            {{ content | safe }}
-        </main>
+        <div class="w-full pb-12 bg-green-500 flex flex-col items-center">
+            <main class="w-full max-w-[8in] p-4 mt-8 bg-zinc-50 border-4 border-cyan-700 drop-shadow-lg">
+                {{ content | safe }}
+            </main>
+        </div>
         {% include "partials/footer.njk" %}
     </div>
     {% include "partials/schema.njk" %}

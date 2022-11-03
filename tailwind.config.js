@@ -16,7 +16,7 @@ module.exports = {
           'logo': {
             'bg': '#52525b'
           },
-          'link': '#ddd8ff',
+          'link': '#0e7490',
         }
       },
       'fontFamily': {
